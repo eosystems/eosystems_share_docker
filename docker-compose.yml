@@ -10,7 +10,10 @@ services:
     networks:
       - default
       - eosystemsdocker_default
+      - eopesdocker_default
 
 networks:
   eosystemsdocker_default:
+    external: true
+  eopesdocker_default:
     external: true
