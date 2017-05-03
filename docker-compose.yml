@@ -2,7 +2,7 @@ version: '2'
 services:
   nginx:
     tty: true
-    image: nginx-eosystems
+    image: eosystems/nginx-eosystems
     container_name: nginx-eosystems
     build: build/nginx-eosystems
     ports:
