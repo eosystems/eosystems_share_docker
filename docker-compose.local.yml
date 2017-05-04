@@ -12,8 +12,8 @@ services:
       - eosystemsdocker_default
       - eopesdocker_default
     environment:
-      url_eobackbone: localhost
-      url_eopes: eopes.local
+      URL_EOBACKBONE: localhost
+      URL_EOPES: eopes.local
 
 networks:
   eosystemsdocker_default:
