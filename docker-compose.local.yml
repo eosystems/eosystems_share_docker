@@ -2,9 +2,9 @@ version: '2'
 services:
   nginx:
     tty: true
-    image: eosystems/nginx-eosystems
-    container_name: nginx-eosystems
-    build: build/nginx-eosystems
+    image: eosystems/nginx-eosystems-local
+    container_name: nginx-eosystems-local
+    build: build/nginx-eosystems-local
     ports:
       - "80:80"
     networks:
@@ -12,8 +12,8 @@ services:
       - eosystemsdocker_default
       - eopesdocker_default
     environment:
-      URL_EOBACKBONE: localhost
-      URL_EOPES: eopes.local
+      url_eobackbone: eobackbone.local
+      url_eopes: eopes.local
 
 networks:
   eosystemsdocker_default:
